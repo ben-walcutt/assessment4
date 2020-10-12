@@ -2,10 +2,12 @@ package co.newlabs.controller;
 
 import co.newlabs.dto.ItemDTO;
 import co.newlabs.service.PalletService;
+import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@AllArgsConstructor
 @RequestMapping("/pallet")
 public class PalletController {
     private PalletService service;

@@ -1,5 +1,6 @@
 package co.newlabs.repository.pallet;
 
+import lombok.AllArgsConstructor;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
@@ -9,6 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Repository
+@AllArgsConstructor
 public class PalletRepository {
     private NamedParameterJdbcTemplate template;
 

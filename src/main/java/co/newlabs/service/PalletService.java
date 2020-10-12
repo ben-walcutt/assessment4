@@ -11,6 +11,7 @@ import co.newlabs.repository.item.ItemEntity;
 import co.newlabs.repository.item.ItemRepository;
 import co.newlabs.repository.pallet.PalletEntity;
 import co.newlabs.repository.pallet.PalletRepository;
+import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import ma.glasnost.orika.MapperFacade;
 import org.springframework.stereotype.Service;
@@ -19,6 +20,7 @@ import java.util.List;
 
 @Slf4j
 @Service
+@AllArgsConstructor
 public class PalletService {
     private PalletRepository palletRepository;
     private ItemRepository itemRepository;
