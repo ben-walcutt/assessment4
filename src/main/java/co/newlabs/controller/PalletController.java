@@ -18,7 +18,7 @@ public class PalletController {
     }
 
     @PostMapping("/{palletId}/add")
-    public ResponseEntity addItemToPallet(@PathVariable int id, @RequestBody ItemDTO item) {
+    public ResponseEntity addItemToPallet(@PathVariable int palletId, @RequestBody ItemDTO item) {
         return ResponseEntity.ok(service.addItemToPallet(item, id));
     }
 
